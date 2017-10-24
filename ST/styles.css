@@ -1,0 +1,220 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: white;
+}
+#wrapper{
+	width:90%;
+	margin: 0 auto;
+}
+#adbox{
+	width:300px;
+	height:250px;
+	overflow: hidden;
+	border: 1px solid #000;
+	margin:150px auto;
+	position: relative;
+	background-color: white;
+
+}
+
+/*----DRINK ONE----*/
+
+#drink1{
+	width:266px;
+	height:255px;
+	background-image: url("art/cup2.png");
+	background-repeat: no-repeat;
+	background-size: 145%;
+	position: relative;
+	margin-left: -70px;
+	bottom: 170px;
+	z-index: 2;
+	animation-name:drinkone;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes drinkone{
+	0%{
+		left:-50px;
+		opacity:0;
+	}
+	100%{
+		left:20px;
+		opacity:1;
+		}
+}
+
+/*----DRINK TWO----*/
+
+#drink2{
+width:266px;
+	height:255px;
+	background-image: url("art/Untitled-3.png");
+	background-repeat: no-repeat;
+	background-size: 125%;
+	margin-left: -26px;
+	position: absolute;
+	bottom: -60px;
+	z-index: 3;
+	opacity: 0;
+	animation-name:drinktwo;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes drinktwo{
+	0%{
+		left:0px;
+		opacity:0;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		left:0px;
+		opacity:1;
+		}
+}
+
+/*----STRAW----*/
+
+#drink3{
+width:266px;
+	height:255px;
+	background-image: url("art/Untitled-2.png");
+	background-repeat: no-repeat;
+	background-size: 125%;
+	margin-left: -16px;
+	position: absolute;
+	bottom: -52px;
+	z-index: 3;
+	opacity: 0;
+	animation-name:drinktwo;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes drinktwo{
+	0%{
+		left:0px;
+		opacity:0;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		left:0px;
+		opacity:1;
+		}
+}
+
+
+
+
+#drink4{
+width:266px;
+	height:255px;
+	background-image: url("art/Untitled-5.png");
+	background-repeat: no-repeat;
+	background-size: 125%;
+	margin-left: -16px;
+	position: absolute;
+	bottom: -52px;
+	z-index: 3;
+	opacity: 0;
+	animation-name:drinktwo;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes drinktwo{
+	0%{
+		left:0px;
+		opacity:0;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		left:0px;
+		opacity:1;
+		}
+}
+
+/*----TYPE----*/
+
+h1{
+	font-size: 1.5em;
+	font-family: sans-serif;
+	color:#116244;
+	z-index: 4;
+	opacity: 0;
+	position: absolute;
+	top:20px;
+	animation-name:h_one;
+    animation-duration: 2s;
+    animation-delay:5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_one{
+	0%{
+		left:-200px;
+	}
+	100%{
+		left:25px;
+		opacity: 1;
+	}
+}
+
+h2{
+	font-size: 1em;
+	font-family: sans-serif;
+	color:black;
+	z-index: 4;
+	opacity: 0;
+	position: absolute;
+	top:48px;
+	animation-name:h_two;
+    animation-duration: 2s;
+    animation-delay:5.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_two{
+	0%{
+		left:-200px;
+	}
+	100%{
+		left:25px;
+		opacity: 1;
+	}
+}
+
+
+
+
+
+.rectangle .logo {
+   margin-top: 130px;
+  margin-left: 124px;
+  position: relative;
+  z-index: 10;
+ //-webkit-transform: scale(1);
+ -webkit-animation: scale-down-animation .10s 1 ease-in-out;
+ -webkit-animation-duration: .5s;
+}
+
+
+
+@-webkit-keyframes scale-down-animation {
+  0%   { opacity: 0; -webkit-transform: scale(2); }
+  100% { opacity: 1; -webkit-transform: scale(1); }
+}
